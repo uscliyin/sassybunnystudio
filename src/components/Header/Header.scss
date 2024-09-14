@@ -1,0 +1,20 @@
+/* Header.scss */
+
+.header-container {
+    display: flex;
+    justify-content: center;  /* Centers horizontally */
+    align-items: center;       /* Centers vertically (in this case, within the height you define) */
+    height: 250px;             /* You can adjust this height as needed */
+    //background-color: aqua;
+    margin: 0;
+    padding:0;
+    top:0;
+    width: 100%;               /* Make the header span the full width of the page */
+    box-sizing:border-box;
+  }
+  
+  .header-container img {
+    max-width:100%;
+    width: 500px;   /* Adjust the image size as needed */
+    height: auto;
+  }

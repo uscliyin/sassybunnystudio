@@ -1,0 +1,42 @@
+.card {
+    gap: 20px;
+    padding: 20px;
+    text-decoration: none;
+    width: 260px;
+    display: flex;
+    flex-direction: column;
+
+    .image {
+        width: 250px;
+        height: 250px;
+        overflow: hidden;
+        position: relative;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+        }
+    }
+}
+
+.card a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit text color from the parent */
+  }
+.card h2 {
+    font-size: 16px;
+    font-weight: 300;
+    font-family: cursive;
+    color:#ff4dc4;
+    text-decoration: none;
+}
+
+.card h3 {
+    font-size: 16px;
+    font-weight: 300;
+    font-family: cursive;
+    color:#ff4dc4;
+    text-decoration: none;
+}

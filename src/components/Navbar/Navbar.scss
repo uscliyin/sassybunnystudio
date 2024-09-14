@@ -1,0 +1,60 @@
+/* Navbar.css */
+
+.navbar {
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center;
+    height: 40px;
+    position:relative;
+    border-bottom: 1px solid #292727;
+  }
+  
+  .center {
+    display: flex;
+    gap: 20px;               /* Space between the items */
+  }
+  
+  .item {
+    list-style: none;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .link {
+    color:#ff4dc4;          /* White color for the links */
+    text-decoration: none;   /* Remove underline */
+    font-size: 20px;         /* Font size for the links */
+    font-family: cursive;
+
+  }
+  .link:hover {
+    color: #ff99dd;          /* Hover color */
+    text-decoration: underline; 
+  }
+
+  .item .icon {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 22px; /* Make sure the icon size is consistent with the text */
+  }
+
+  .dropdown {
+    position: absolute;
+    background-color: #f3ebeb;
+    border: 1px solid #ccc;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Add shadow to dropdown */
+  }
+  
+  .dropdown-link {
+    padding: 5px 10px;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .dropdown-link:hover {
+    background-color: #f1f1f1;
+  }

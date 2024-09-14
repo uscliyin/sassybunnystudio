@@ -1,0 +1,59 @@
+.featuredProducts {
+    margin: 50px 100px;
+  
+    .top {
+      display: flex;
+      align-items:flex-start;
+      margin-bottom: 20px;
+  
+      h1 {
+        flex: 2;
+        text-transform: capitalize;
+      }
+    }
+  
+    .bottom{
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-auto-rows: minmax(200px,auto);
+      justify-content: center;
+      align-content: center;
+      gap: 10px;
+    }
+
+
+
+    /* Medium Devices (Tablets, 768px and up) */
+  @media (max-width: 1200px) {
+    margin: 50px 50px; /* Reduce side margins */
+
+    .bottom {
+      grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    }
+  }
+
+  /* Small Devices (Large Phones, 992px and up) */
+  @media (max-width: 992px) {
+    .bottom {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    }
+  }
+
+  /* Extra Small Devices (Phones, 600px and below) */
+  @media (max-width: 600px) {
+    margin: 20px 10px; /* Further reduce side margins */
+
+    .bottom {
+      grid-template-columns: 1fr; /* 1 column */
+    }
+
+    .top {
+      flex-direction: column;
+      align-items: center;
+
+      h1 {
+        text-align: center;
+      }
+    }
+  }
+  }
